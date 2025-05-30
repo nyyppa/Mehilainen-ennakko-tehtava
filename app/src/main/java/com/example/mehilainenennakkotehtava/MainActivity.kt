@@ -13,9 +13,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mehilainenennakkotehtava.ui.theme.MehilainenEnnakkoTehtavaTheme
 
+import android.content.Context
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.jsonObject
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val test = loadJsonWithKotlinSerialization(this, "sampleJson.txt")
+        println(test)
         enableEdgeToEdge()
         setContent {
             MehilainenEnnakkoTehtavaTheme {
@@ -43,5 +50,15 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun GreetingPreview() {
     MehilainenEnnakkoTehtavaTheme {
         Greeting("Android")
+    }
+}
+
+fun loadJsonWithKotlinSerialization(context: Context, fileName: String): JsonObject? {
+    return try {
+        val jsonStr = context.assets.open(fileName).bufferedReader().use { it.readText() }
+        Json.parseToJsonElement(jsonStr).jsonObject
+    } catch (e: Exception) {
+        e.printStackTrace()
+        null
     }
 }
