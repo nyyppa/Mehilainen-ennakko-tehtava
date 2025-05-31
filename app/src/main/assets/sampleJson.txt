@@ -1,0 +1,279 @@
+{
+    "version": "1.0.0",
+    "author": "Lorem Ipsum",
+    "views": [
+        {
+            "location": "consents",
+            "style": {
+                "type": "screen"
+            },
+            "i18n": {
+                "title": {
+                    "fi": "Lorem ipsum dolor sit",
+                    "en": "Lorem ipsum dolor sit",
+                    "sv": "Lorem ipsum dolor sit"
+                }
+            },
+            "rows": [
+                {
+                    "columns": [
+                        {
+                            "component": {
+                                "type": "card"
+                            },
+                            "rows": [
+                                {
+                                    "columns": [
+                                        {
+                                            "component": {
+                                                "type": "typography",
+                                                "variant": "title1",
+                                                "i18n": {
+                                                    "text": {
+                                                        "fi": "Lorem ipsum dolor sit",
+                                                        "en": "Lorem ipsum dolor sit",
+                                                        "sv": "Lorem ipsum dolor sit"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "columns": [
+                                        {
+                                            "component": {
+                                                "type": "typography",
+                                                "variant": "title6",
+                                                "i18n": {
+                                                    "text": {
+                                                        "fi": "Lorem ipsum",
+                                                        "sv": "Lorem ipsum",
+                                                        "en": "Lorem ipsum"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "columns": [
+                                        {
+                                            "component": {
+                                                "type": "typography",
+                                                "variant": "hbody2",
+                                                "i18n": {
+                                                    "text": {
+                                                        "fi": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                                                        "sv": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                                                        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "columns": [
+                                        {
+                                            "component": {
+                                                "type": "checkBoxItem",
+                                                "i18n": {
+                                                    "label": {
+                                                        "fi": "Lorem ipsum dolor sit amet, consectetur",
+                                                        "sv": "Lorem ipsum dolor sit amet, consectetur",
+                                                        "en": "Lorem ipsum dolor sit amet, consectetur"
+                                                    }
+                                                },
+                                                "disabled": false,
+                                                "callToAction": {
+                                                    "action": "toggle-permission-value",
+                                                    "metadata": {
+                                                        "permission": "general_digital_marketing",
+                                                        "value": false
+                                                    }
+                                                },
+                                                "checked": true,
+                                                "labelPlacement": "end"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "columns": [
+                        {
+                            "component": {
+                                "type": "card"
+                            },
+                            "rows": [
+                                {
+                                    "columns": [
+                                        {
+                                            "component": {
+                                                "type": "accordion",
+                                                "i18n": {
+                                                    "summary": {
+                                                        "fi": "Lorem ipsum",
+                                                        "sv": "Lorem ipsum",
+                                                        "en": "Lorem ipsum"
+                                                    }
+                                                }
+                                            },
+                                            "rows": [
+                                                {
+                                                    "columns": [
+                                                        {
+                                                            "component": {
+                                                                "type": "typography",
+                                                                "variant": "hbody2",
+                                                                "i18n": {
+                                                                    "text": {
+                                                                        "fi": "Lorem ipsum dolor sit amet.",
+                                                                        "sv": "Lorem ipsum dolor sit amet.",
+                                                                        "en": "Lorem ipsum dolor sit amet."
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "columns": [
+                                                        {
+                                                            "component": {
+                                                                "type": "checkBoxItem",
+                                                                "i18n": {
+                                                                    "label": {
+                                                                        "fi": "Lorem ipsum dolor",
+                                                                        "sv": "Lorem ipsum dolor",
+                                                                        "en": "Lorem ipsum dolor"
+                                                                    },
+                                                                    "subLabel": {
+                                                                        "fi": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+                                                                        "sv": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+                                                                        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing."
+                                                                    }
+                                                                },
+                                                                "disabled": false,
+                                                                "callToAction": {
+                                                                    "action": "toggle-permission-value",
+                                                                    "metadata": {
+                                                                        "permission": "mail_marketing",
+                                                                        "value": false
+                                                                    }
+                                                                },
+                                                                "checked": true,
+                                                                "labelPlacement": "end"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "columns": [
+                                                        {
+                                                            "component": {
+                                                                "type": "checkBoxItem",
+                                                                "i18n": {
+                                                                    "label": {
+                                                                        "fi": "Lorem ipsum dolor",
+                                                                        "sv": "Lorem ipsum dolor",
+                                                                        "en": "Lorem ipsum dolor"
+                                                                    },
+                                                                    "subLabel": {
+                                                                        "fi": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+                                                                        "sv": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+                                                                        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing."
+                                                                    }
+                                                                },
+                                                                "disabled": false,
+                                                                "callToAction": {
+                                                                    "action": "toggle-permission-value",
+                                                                    "metadata": {
+                                                                        "permission": "phone_marketing",
+                                                                        "value": true
+                                                                    }
+                                                                },
+                                                                "checked": false,
+                                                                "labelPlacement": "end"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "columns": [
+                                                        {
+                                                            "component": {
+                                                                "type": "checkBoxItem",
+                                                                "i18n": {
+                                                                    "label": {
+                                                                        "fi": "Lorem ipsum dolor",
+                                                                        "sv": "Lorem ipsum dolor",
+                                                                        "en": "Lorem ipsum dolor"
+                                                                    },
+                                                                    "subLabel": {
+                                                                        "fi": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation.",
+                                                                        "sv": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation.",
+                                                                        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation."
+                                                                    }
+                                                                },
+                                                                "disabled": false,
+                                                                "callToAction": {
+                                                                    "action": "toggle-permission-value",
+                                                                    "metadata": {
+                                                                        "permission": "service_messages",
+                                                                        "value": true
+                                                                    }
+                                                                },
+                                                                "checked": false,
+                                                                "labelPlacement": "end"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "columns": [
+                        {
+                            "style": {
+                                "horizontalAlignment": "center"
+                            },
+                            "component": {
+                                "type": "button",
+                                "i18n": {
+                                    "text": {
+                                        "fi": "Lorem ipsum dolor sit amet",
+                                        "en": "Lorem ipsum dolor sit amet",
+                                        "sv": "Lorem ipsum dolor sit amet"
+                                    }
+                                },
+                                "variant": "text",
+                                "endIcon": "ExternalLink",
+                                "callToAction": {
+                                    "action": "open-url",
+                                    "metadata": {
+                                        "url": {
+                                            "fi": "https://example.com/placeholder",
+                                            "en": "https://example.com/placeholder",
+                                            "sv": "https://example.com/placeholder"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
