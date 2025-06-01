@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
             MaterialTheme {
                 val uiModelState = produceState<UIModel?>(initialValue = null) {
                     delay(2000) // Simulate loading delay
-                    val jsonString = assets.open("TestiJson.txt").bufferedReader().use { it.readText() }
+                    val jsonString = assets.open("sampleJson.txt").bufferedReader().use { it.readText() }
                     val model = Json { ignoreUnknownKeys = true }.decodeFromString<UIModel>(jsonString)
                     value = model
                 }
@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                     if (uiModelState.value == null) {
                         LoadingScreen()
                     } else {
-                        DynamicUI(uiModelState.value!!, lang = "en")
+                        DynamicUI(uiModelState.value!!, lang = "fi")
                     }
                 }
             }
